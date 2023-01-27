@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="crew.css">
+  <link rel="stylesheet" href="destination.css">
+  <link rel="stylesheet" href="tech.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="assets/shared/logo.svg" alt="logo" class="logo">
+    <img src="assets/shared/icon-hamburger.svg" alt="hamburger menu" class="opened">
+    <div class="rectangle"></div>
+    <nav class="nav-bar">
+      <img src="assets/shared/icon-close.svg" alt="closed menu" class="closed">
+      <ul>
+        <li class="nav-button"><span>00</span> Home</li>
+        <li class="nav-button"><span>01</span> Destination</li>
+        <li class="nav-button"><span>02</span> Crew</li>
+        <li class="nav-button"><span>03</span> Technology</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="home page">
+      <div class="main-para">
+        <h5>So, you want to travel to</h5>
+        <h1>Space</h1>
+          <p>
+            Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+          </p>
+      </div>
+      <div class="explore">
+        <p>Explore</p>
+      </div>
+    </div>
+
+    <div class="destination page" style="display: none;">
+      <h2><span>01</span> Pick your destination</h2>
+      <img src="assets/destination/image-moon.png" alt="destination" id="planetImage">
+      <nav>
+        <ul>
+          <li class="destination-nav">Moon</li>
+          <li class="destination-nav">Mars</li>
+          <li class="destination-nav">Europa</li>
+          <li class="destination-nav">Titan</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="crew page" style="display: none;">
+      <h2><span>02</span> Meet your crew</h2>
+      <img src="assets/crew/image-douglas-hurley.png" alt="Crew members" id="crewPics"> 
+      <ul class="nav-circles">
+        <li><div class="crew-nav"></div></li>
+        <li><div class="crew-nav"></div></li>
+        <li><div class="crew-nav"></div></li>
+        <li><div class="crew-nav"></div></li>
+      </ul>
+    </div>
+
+    <div class="technology page" style="display: none;">
+        <h2><span>03</span> Space launch 101</h2>
+        <picture>
+          <source media="(min-width: 767px)" srcset="assets/technology/image-launch-vehicle-portrait.jpg" sizes="" id="portrait">
+          <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="Technology" id="landscape">
+        </picture>
+        <ul class="nav-numbers">
+          <li class="tech-nav">1</li>
+          <li class="tech-nav">2</li>
+          <li class="tech-nav">3</li>
+        </ul>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+  <script src="destination.js"></script>
+  <script src="crew.js"></script>
+  <script src="technology.js"></script>
+</body>
+</html>

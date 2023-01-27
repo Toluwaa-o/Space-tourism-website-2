@@ -1,0 +1,176 @@
+
+
+.technology > picture {
+    width: 100%;
+    margin: 0;
+}
+
+.technology > h2 {
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    letter-spacing: 2.7px;
+}
+
+.technology > h2 > span {
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.nav-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.nav-numbers > li {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    font-size: 16px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.nav-numbers > li:hover {
+    border: 1px solid white;
+}
+
+.nav-numbers > li:first-child {
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.techDet {
+    max-width: 90%;
+    margin: auto;
+}
+
+.techDet > p:first-child {
+    font-size: 14px;
+    line-height: 17px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+}
+
+.techDet > h3 {
+    font-family: 'Bellefair', serif;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 0.4em;
+    padding-bottom: 1em;
+}
+
+.techDet > p:last-child {
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D6F9;
+}
+
+.Spaceport , .capsule {
+    display: none;
+}
+
+@media (min-width: 480px){
+
+    .technology > h2 {
+        text-align: left;
+        margin-top: 1em;
+        margin-left: 1em;
+        font-size: 20px;
+        grid-area: 1/1/2/2;
+    }
+
+    .technology > picture {
+        width: 100%;
+    }
+
+    .nav-numbers {
+        padding-top: 4em;
+    }
+
+    .nav-numbers > li {
+        height: 60px;
+        width: 60px;
+        font-size: 24px;
+    }
+
+    .techDet {
+        max-width: 60%;
+    }
+
+    .techDet > p:first-child {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .techDet > h3 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .techDet > p:last-child {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .technology {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto
+    }
+
+    .technology > h2 {
+        grid-area: 1/1/2/4;
+        padding-left: 4.5em;
+    }
+
+    .technology > ul {
+        grid-area: 2/1/3/2;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 6em;
+        gap: 1.5em;
+    }
+
+    .nav-numbers > li {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .technology > picture {
+        grid-area: 2/3/3/4;
+    }
+
+    .techDet {
+        text-align: left;
+        margin-left: 3em;
+        max-width: 65%;
+    }
+
+    .techDet > h3 {
+        font-size: 56px;
+    }
+
+    .techDet > p:last-child {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}

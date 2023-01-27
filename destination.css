@@ -1,0 +1,210 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    max-width: 100vw;
+}
+
+.destination > h2 {
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    letter-spacing: 2.7px;
+}
+
+.destination > h2 > span {
+    font-weight: 700;
+}
+
+.destination > img {
+    max-width: 50%;
+    margin: auto;
+}
+
+.destination > nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.destination > nav > ul > li {
+    font-size: 0.95em;
+    padding-bottom: 0.5em;
+    color: #d0d6f9;
+    transition: all 0.2s linear;
+}
+
+.destination > nav > ul > li:hover {
+    border-bottom: 3px solid #d0d6f9;
+}
+
+.destination > nav > ul > li:first-child {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.part1 {
+    border-bottom: 0.5px solid #383B4B;
+    padding-bottom: 2em;
+}
+
+.part1 > h3 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Bellefair', serif;
+    padding-top: 0.1em;
+}
+
+.part1 > p {
+    color: #d0d6f9;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 0.5em;
+}
+
+.destination > div > div > div > h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d0d6f9;
+    letter-spacing: 2.36px;
+}
+
+.part3 > p, .part2 > p {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Bellefair', serif;
+}
+
+.part2 {
+    padding: 1.5em;
+    padding-top: 2em;
+}
+
+.Mars, .Europa, .Titan {
+    display: none;
+}
+
+@media (min-width: 480px) {
+
+    .logo {
+        margin-left: 1em;
+    }
+
+    .destination > h2 {
+        text-align: left;
+        margin-top: 1em;
+        margin-left: 1em;
+        font-size: 20px;
+    }
+
+    .destination > h2 > span {
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+
+    .destination > img {
+        width: 40%;
+    }
+    
+    .destination > nav > ul > li {
+        font-size: 16px;
+        gap: 3em;
+        padding-top: 0.5em;
+    }
+
+    .destination > nav > ul {
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+
+    .part1 > h3{
+        font-size: 80px;
+    }
+
+    .part1 > p {
+        font-size: 16px;
+        padding: 0 7em;
+        line-height: 28px;
+    }
+
+    .destination > div > div > div > h4 {
+        font-size: 14px;
+    }
+
+    .part2 > p, .part3 > p {
+        font-size: 28px;
+    }
+
+    .part2 {
+        padding: 0;
+    }
+
+    .bottom-deets {
+        padding-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7em;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .destination {
+        display: grid;
+        grid-template-columns: 55% 55%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .destination > h2 {
+        padding-left: 7em;
+        grid-area: 1/1/2/3;
+    }
+
+    .destination > img {
+        grid-area: 2/1/4/2;
+        width: 100%;
+    }
+
+    .moon {
+        grid-area: 3/2/4/3;
+    }
+
+    .destination > nav {
+        grid-area: 2/2/3/3;
+    }
+
+    .destination > nav > ul {
+        justify-content: flex-start;
+    }
+
+    .destination > nav > ul > li {
+        font-size: 16px;
+    }
+
+    .part1 {
+        text-align: left;
+        width: 55%;
+    }
+
+    .part1 > h3 {
+        font-size: 100px;
+    }
+
+    .part1 > p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .bottom-deets {
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
